@@ -6,9 +6,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>jsp学习</title>
+    <title>jsp注释</title>
 </head>
 <body>
-    <h2>你好，JSP!</h2>
+jsp中的两种注释：
+    显示:<!-- HTML -->
+    隐示:<!-- HTML -->
+        1：jsp自己的<%-- 自己--%>
 </body>
 </html>

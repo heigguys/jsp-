@@ -35,7 +35,13 @@ public class LoginServlet extends HttpServlet {
             req.getRequestDispatcher("/login.jsp").forward(req, resp);
             return;
         }
-        // req.getRequestDispatcher("/index.jsp").forward(req, resp);
+
+//         req.getRequestDispatcher("/index.jsp").forward(req, resp);
+        // 登录成功
+        // 设置登录信息到session中
+        req.getSession().setAttribute("uname", name);
+        // 重定向
+        resp.sendRedirect("index.jsp");
     }
 }
 

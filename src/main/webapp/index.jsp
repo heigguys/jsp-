@@ -5,9 +5,12 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<%--<h1><%= "Hello World!" %>--%>
+<%--</h1>--%>
+<%--<br/>--%>
+<%--<a href="hello-servlet">Hello Servlet</a>--%>
+
+
+<h2>欢迎<%=session.getAttribute("uname")%>登录!</h2>
 </body>
 </html>

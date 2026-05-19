@@ -12,6 +12,7 @@
 </head>
 <body>
   <form action="loginServlet" method="post">
+<%--  <form action="serv06" method="post">--%>
     姓名： <input type="text" name="uname"> <br>
     密码： <input type="password" name="upwd"> <br>
     <button type="submit">登录</button>

@@ -20,6 +20,10 @@ public class Servlet08 extends HttpServlet {
 
         resp.setContentType("text/html;charset=UTF-8");
         Cookie cookie = new Cookie("name", "zhangsan");
+        // cookie设置
+        cookie.setMaxAge(-1);
+        cookie.setPath("/");
+
         resp.addCookie(cookie);
 
 //        resp.getWriter().write("你好");

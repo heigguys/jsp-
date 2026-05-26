@@ -17,7 +17,11 @@
     密码： <input type="password" name="upwd"> <br>
     <button type="submit">登录</button>
 <%--    <span style="color: red; font-size: 12px">${msg}</span>--%>
-    <span style="color: red; font-size: 12px"><%=request.getAttribute("msg")%></span>
+<%--    <span style="color: red; font-size: 12px"><%=request.getAttribute("msg")%></span>--%>
+    <span style="color: red; font-size: 12px">${msg}</span>
+    <span style="color: red; font-size: 12px">${applicationScope}</span>
+    <span style="color: red; font-size: 12px">${sessionScope}</span>
+    <span style="color: red; font-size: 12px">${empty user}</span>
   </form>
 
 </body>

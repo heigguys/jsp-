@@ -18,6 +18,12 @@ public class Servlet11 extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        // 打印URI
+        System.out.println("URL= " + req.getRequestURL());
+        System.out.println("URI= " + req.getRequestURI());
+
+
         // 通过request对象获取
         ServletContext servletContext1 = req.getServletContext();
 
